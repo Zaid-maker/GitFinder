@@ -467,6 +467,27 @@ body {
   display: inline;
 }
 
+.header-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.header:not(.search-active) .header-search {
+  margin-inline-start: auto;
+}
+
+.header:not(.search-active) .search-box,
+.header.search-active:where(.logo, .theme-btn),
+.search-toggler[aria-expanded="true"] .search-icon,
+.search-toggler[aria-expanded="false"] .close-icon,
+[data-theme="dark"] .theme-btn .moon-icon,
+[data-theme="light"] .theme-btn .sun-icon {
+  display: none;
+}
+
 /*-----------------------------------*\
   #PROFILE
 \*-----------------------------------*/
