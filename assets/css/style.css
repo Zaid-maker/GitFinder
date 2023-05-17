@@ -385,6 +385,40 @@ body {
   #HEADER
 \*-----------------------------------*/
 
+.header {
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  transition: background-color var(--transition-short);
+  z-index: 4;
+}
+
+.header.active {
+  background-color: var(--surface);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  color: var(--on-background);
+  font-size: 26px;
+  font-weight: var(--weight-bold);
+  line-height: 26px;
+}
+
+.logo .text-primary {
+  display: inline;
+}
+
 /*-----------------------------------*\
   #PROFILE
 \*-----------------------------------*/
