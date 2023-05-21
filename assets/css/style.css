@@ -538,6 +538,17 @@ body {
 
 /* Card */
 
+.card {
+  --spacing: 16px;
+  background-color: var(--surface);
+  border-radius: var(--radius-12);
+  overflow: hidden;
+}
+
+.card:where(.card-body, .card-footer) {
+  padding: var(--spacing);
+}
+
 /* Follower card */
 
 /* Repository card */
