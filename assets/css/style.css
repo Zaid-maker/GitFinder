@@ -847,6 +847,41 @@ body {
   #TAB
 \*-----------------------------------*/
 
+.tab-container .tab-list {
+  margin-inline: -16px;
+  padding-inline: 16px;
+}
+
+.tab-panel {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-block-start: 16px;
+}
+
+.tab-panel .card {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.tab-panel .error-content {
+  width: 100%;
+  padding-block: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-panel .error-content .title-1 {
+  color: var(--alpha-50);
+}
+
+.tab-panel .error-content .text {
+  color: var(--alpha-50);
+}
+
 /*-----------------------------------*\
   #ERROR
 \*-----------------------------------*/
