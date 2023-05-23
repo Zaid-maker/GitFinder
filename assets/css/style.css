@@ -440,6 +440,20 @@ body {
 
 /* Badge */
 
+.badge {
+  background-color: var(--surface-variant);
+  color: var(--alpha-60);
+  max-width: max-content;
+  font-size: var(--label-2);
+  font-weight: var(--weight-semiBold);
+  text-transform: uppercase;
+  height: 24px;
+  line-height: 24px;
+  padding-inline: 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--surface-variant-outline);
+}
+
 /* Tab navigation */
 
 .tab-list {
@@ -552,6 +566,55 @@ body {
 /* Follower card */
 
 /* Repository card */
+
+.repo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-card .card-body {
+  flex-grow: 1;
+}
+
+.card-body .card-title {
+  max-width: max-content;
+  padding-inline-end: 76px;
+  transition: var(--transition-short);
+}
+
+.card-body .card-title:where(:hover, :focus-visible) {
+  color: var(--primary);
+}
+
+.repo-card .card-text {
+  color: var(--on-surface-variant);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  -webkit-line-clamp: 2;
+  margin-block-start: 8px;
+}
+
+.repo-card .badge {
+  position: absolute;
+  top: var(--spacing);
+  right: var(--spacing);
+}
+
+.repo-card .card-footer {
+  background-color: var(--surface-variant);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.repo-card .meta-item {
+  color: var(--on-surface);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
 /* Skeleton */
 
