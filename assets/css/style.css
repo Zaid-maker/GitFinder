@@ -860,6 +860,10 @@ body {
   padding-block-start: 16px;
 }
 
+.tab-panel[hidden] {
+  display: none;
+}
+
 .tab-panel .card {
   flex-grow: 1;
   width: 100%;
